@@ -1,0 +1,171 @@
+/* - - - - - - - - - - PROPIEDADES UNIVERSALES - - - - - - - - - - */
+*{
+    /*Esta propiedad mantiene la medida concretas*/
+    box-sizing: border-box; /* Suma margen interno y externo*/
+    padding: 0px;
+    margin: 0px;
+    font-family: "Century Gothic";
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.input-radio{
+    width: 20px;
+    height: 20px;
+}
+
+body{
+    background: #f3ead1;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.borde{    
+    width: 100%;   /* Ancho */
+    height: 100px; /* Alto */
+}
+
+footer{
+    width: 100%;   /* Ancho */
+    height: 170PX; /* Alto */
+}
+
+/* <div class="container"> */
+.container{
+    max-width: 1500px;
+    width: 50%;   /* Capacidad proporional del contenedor */
+    margin: auto; /* Centrado adaptable de ventana */
+    text-align: center;
+}
+
+/* Imagen Logo */
+#logo-waff{
+    width: 90px;
+}
+
+/* - - - - - - - - - - FORMULARIO - - - - - - - - - - */
+
+.formulario{
+    margin: 0px 0px;
+    background: #faf7ee;
+    border: solid;
+    /* box-shadow: 0 0 50px 2px #2e2d2d; */
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+
+#titulo{    
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* - - - - - - - - - - COLUMNAS DE REGISTRO USUARIO - - - - - - - - - - */
+
+.block-two-part{
+    display: grid; /* Indicación de cuadricula */
+    grid-template-columns: repeat(2, 1fr); /* Definición de cuadricula */
+}
+
+.block label input{
+    text-align: center;
+    font-size: 130%;
+    width: 100%;
+    padding: 5px 2px;
+
+    border-radius: 10px;
+    border: solid;
+}
+
+.block label{
+    margin: 20px;
+}
+
+.block-three-part{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* - - - - - - - - - - CAMPOS DE GENERO - - - - - - - - - - */
+
+.block-G .genero{
+    display: flex;
+    justify-content: center;
+}
+
+.block-G .genero li{
+    display: flex;
+    align-items: center;
+}
+
+.block-G .genero li p{
+    margin: 20px;
+}
+
+/* - - - - - - - - - - Terminos y condiciones - - - - - - - - - - */
+
+.block-condiciones{
+    font-size: 16px;
+    padding: 20px 5px;
+}
+
+.block-condiciones a:hover{
+    color: #0076ff;
+    border-bottom: solid #0076ff 1px;
+}
+
+/* - - - - - - - - - - CHECK-BOX - - - - - - - - - - */
+
+.btn{
+    /*Aparece el puntor encima del elemento botón*/
+    cursor: pointer;
+    /*Caja en linea*/
+    display: inline-block;
+    /*Peso de la fuente*/
+    font-weight: bold;
+    background: rgb(243, 226, 148);
+    color:#000000;
+    padding: 20px 20px;
+    font-size: 15px;
+    border:1px solid #000000; 
+    border-radius: 10px;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.block-button label{
+    margin: 2%;
+}
+
+.block-button label a{
+    margin-top: 2%;
+}
+
+.block-button{
+    margin: 2% 0%;
+}
+
+@media(max-width: 1300px){
+    .block-two-part{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-three-part{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .genero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+    }
+}

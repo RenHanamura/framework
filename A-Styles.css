@@ -1,0 +1,154 @@
+/* - - - - - - - - - - PROPIEDADES UNIVERSALES - - - - - - - - - - */
+*{
+    /*Esta propiedad mantiene la medida concretas*/
+    box-sizing: border-box; /* Suma margen interno y externo*/
+    padding: 0px;
+    margin: 0px;
+    font-family: "Century Gothic";
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #f3ead1;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+.borde{    
+    width: 100%;   /* Ancho */
+    height: 70px; /* Alto */
+}
+
+footer{
+    width: 100%;   /* Ancho */
+    height: 100px; /* Alto */
+}
+
+/* <div class="container"> */
+.container{
+    max-width: 800px;
+    width: 60%;   /* Capacidad proporcional del contenedor */
+    margin: auto; /* Centrado adaptable de ventana */
+    text-align: center;
+}
+
+/* Imagen Logo */
+#logo-waff{
+    width: 110px;
+}
+
+/* - - - - - - - - - - FORMULARIO - - - - - - - - - - */
+
+.formulario{
+    background: #faf7ee;
+    border: solid;
+    /* box-shadow: 0 0 50px 2px #2e2d2d; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#titulo{    
+    font-weight: bold;
+    font-size: 200%;
+}
+
+.formulario .block{
+    padding: 20px 20px;
+}
+
+.block-campos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.block-campos, input{
+    width: 90%;
+    padding: 5px 2px;
+    text-align: center;
+    font-size: 120%;
+    
+}
+
+.block-campos label input{
+    border-radius: 10px;
+    border: solid;
+}
+
+/* - - - - - - - - - - CORREO Y NOMBRE - - - - - - - - - - */
+
+.block label input{
+    font-size: 20px;
+    padding: 10px 5px;
+    margin: 0px 5px;
+    text-align: center;
+}
+
+/* - - - - - - - - - - CHECK-BOX - - - - - - - - - - */
+
+.block label#check-Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block label#check-Box input{
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.block label#check-Box p{
+    font-size: 20px;
+}
+
+/* - - - - - - - - - - CHECK-BOX - - - - - - - - - - */
+
+.condiciones{
+    font-size: 16px;
+}
+
+.condiciones a:hover{
+    color: #0076ff;
+    border-bottom: solid #0076ff 1px;
+}
+
+.btn{
+    /*Aparece el puntor encima del elemento botón*/
+    cursor: pointer;
+    /*Caja en linea*/
+    display: inline-block;
+    /*Peso de la fuente*/
+    font-weight: bold;
+    padding: 20px 20px;
+    background: rgb(243, 226, 148);
+    color:#000000;
+    font-size: 15px;
+    border:1px solid #000000; 
+    border-radius: 10px;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+@media(max-width:1000px){
+    .block-campos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-campos label{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
